@@ -5,7 +5,7 @@ services:
       context: ./
       dockerfile: Dockerfile-dev
     ports:
-      # ports: HOST_PORT:CONTAINER_PORT
+      # HOST_PORT:CONTAINER_PORT
       - "8083:8000"
     volumes:
       # HOST_DIR:CONTAINER_DIR

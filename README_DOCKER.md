@@ -1,10 +1,12 @@
-date:2022-03-10
-change-date: 2022-03-21
-author:   Dieter Buricke <ghburdie@web.de>
+---
+create-date: 2022-03-10
+change-date: 2022-05-07
+author: Dieter Buricke <ghburdie@web.de>
+---
 
 # MkDocs Docker image and Docker container
 
-If you like to run mkdocs server in Docker container, then this description can be usefull for you.
+If you like to run mkdocs server in Docker container, this description can be useful for you.
 
 After starting Docker container, mkdocs server is reached at http://localhost:8083 from host system (compare configuration section "ports:" in docker-compose-dev.yml).
 
@@ -52,20 +54,20 @@ Stopping container:
 docker stop <CONTAINER ID>
 ```
 
-## Starting container
+## Starting existing container
 
-### Starting existing container (in detached mode):
+### Starting in detached mode:
 ```
 docker start <CONTAINER ID>
 ```
 ### Starting in attached mode
-For watching log messages of mkdocs server it can be helpfull to start in attached mode:
+For watching log messages of mkdocs server it can be helpful to start in attached mode:
 ```
 docker start -a <CONTAINER ID>
 ```
-Container can be stopped with keys: STRG+c
+Container can be stopped with keys: CTRL+c
 
-## Starting interactive shell to container
+### Starting interactive shell to container
 For administrative work you can start a shell to container:
 ```
 docker exec -it <CONTAINER ID> /bin/sh
